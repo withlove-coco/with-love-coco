@@ -16,11 +16,6 @@ $(function(){
 			$('.page-top-btn').fadeOut();
 	}
 	});
-
-	$('.page-top-btn').click(function(){
-		$('body,html').animate({ scrollTop:0}, 500);
-		return false;
-		});
 });
 
  $(document).ready(function(){
@@ -34,4 +29,24 @@ $(function(){
       });
     });
 
+$(function() {
+  var topBtn = $('.button_top');    
+  topBtn.hide(); // 最初はボタンを隠す
 
+  // スクロールしたら発動
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) { // 100px以上スクロールしたら
+      topBtn.fadeIn(); // ボタンを表示
+    } else {
+      topBtn.fadeOut(); // それ以外は非表示
+    }
+  });
+
+  // クリックしたら上に戻る（既存の処理）
+  topBtn.click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+});
