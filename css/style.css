@@ -420,7 +420,15 @@ h1 span{
 
 .katasm{
 	flex:1;
-	text-align:left;
+	text-align:center;
+	list-style: none;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+li.snslg {
+    margin: 50px 0;
 }
 
 /*.katacontainer-border-bottom-line .kata img{
