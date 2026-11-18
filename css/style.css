@@ -576,3 +576,43 @@ li.snslg {
 }*/
 
 
+
+/* 販売休止のお知らせページ */
+
+.notice {
+  max-width: 680px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  text-align: center;
+  line-height: 2;
+}
+
+.notice h2 {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.notice p {
+  margin-bottom: 24px;
+}
+
+.notice a {
+  color: #78624f;
+  text-decoration: underline;
+}
+
+.notice a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .notice {
+    margin: 35px auto;
+    padding: 25px 20px;
+  }
+
+  .notice h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
